@@ -1,0 +1,11 @@
+version: '2'
+services:
+  <appname>:
+    build: .
+    container_name: <appname>_01
+    command: bash -c "npm start"
+    networks:
+      - main
+
+networks:
+  main:
